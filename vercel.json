@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "buildCommand": "npm run build:web",
+    "buildCommand": "npx prisma@5 generate --schema=packages/database/schema.prisma && npm run build:web",
     "outputDirectory": "apps/web/dist",
     "installCommand": "npm install",
     "rewrites": [
